@@ -12,11 +12,12 @@ import '../fire'
 
 const LoginScreen = (props) => {
 
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const continueScreen = () => {
-        props.navigation.navigate('Chat', { email: email });
+        props.navigation.navigate('Login', { email: email });
     }
 
     const myIcon = <Icon name="arrow-forward-outline" size={30} color="#FFF" />;
@@ -29,29 +30,32 @@ const LoginScreen = (props) => {
                     style={{ width: 100, height: 100, alignSelf: 'center' }} />
             </View>
             <View style={{ marginHorizontal: 32 }}>
-                <Text style={styles.header}>Login</Text>
+                <Text style={styles.header}>Sign Up</Text>
+                <TextInput style={styles.input}
+                    placeholder="Full Name"
+                    onChangeText={name => setName(name)}
+                    value={name} />
                 <TextInput style={styles.input}
                     placeholder="Email"
                     onChangeText={email => setEmail(email)}
                     value={email} />
-                    <TextInput style={styles.input}
+                <TextInput style={styles.input}
                     placeholder="Password"
-                    onChangeText={password => setPassword(password)}
+                    onChangeText={pw => setPassword(pw)}
                     value={password} />
                     <View style={styles.textContainer}>
-                    <Text>No Account? </Text> 
+                    <Text>Have an account? </Text> 
                     <TouchableOpacity>
                     <Text 
-                    onPress={() => props.navigation.navigate('Register')}
+                    onPress={() => props.navigation.navigate('Login')}
                     style={styles.linkStyle}
-                    >Create One</Text>
+                    >Login</Text>
                     </TouchableOpacity>
                     </View>
                 <View style={{ alignItems: "flex-end", marginTop: 34 }}>
                     <TouchableOpacity style={styles.continue} onPress={continueScreen}>
                         {myIcon}
                     </TouchableOpacity>
-
                 </View>
             </View>
         </View>
@@ -108,4 +112,4 @@ const styles = StyleSheet.create({
 })
 
 
-export default LoginScreen;
+export default LoginScreen

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "24954700228",
+    "project_id": "connect-chat-359c4",
+    "storage_bucket": "connect-chat-359c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24954700228:android:956d513108e56abdf5e491",
+        "android_client_info": {
+          "package_name": "com.connectchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24954700228-h8urtd8udtoegh95d18gqm804trnqq4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwj8hr31GQhdY2G-ZO3UAYi9vKxr_0sUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24954700228-h8urtd8udtoegh95d18gqm804trnqq4q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
